@@ -38,7 +38,6 @@ async def main():
     with open('beasts.csv', 'w', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         for letter, count in sorted(letters_count.items()):
-            print(letter, count)
             writer.writerow([letter, count])
 
 
